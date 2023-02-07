@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "8c6f3068-8f75-4d57-a6ce-acaa5e7dc81e",
+		"name": "ACs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EnviarCertificado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cpf",
+							"value": "05080507403",
+							"type": "text"
+						},
+						{
+							"key": "eixo",
+							"value": "ENSINO",
+							"type": "text"
+						},
+						{
+							"key": "arquivos",
+							"type": "file",
+							"src": [
+								"/home/helainelins/Downloads/certificado_apresentador_yasmin",
+								"/home/helainelins/certificado-apresentador-yasmin-souza"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/acs-api/v1/discente/enviarcertificado",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"acs-api",
+						"v1",
+						"discente",
+						"enviarcertificado"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
